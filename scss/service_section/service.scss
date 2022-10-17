@@ -1,0 +1,260 @@
+.service {
+    background-color: $color_darkgrey;
+
+    .srvice_items {
+        padding-bottom: 100px;
+
+        .service_items_title {
+            padding-top: 50px;
+            padding-bottom: 100px;
+
+            h3 {
+                font-weight: 300;
+                font-size: 34px;
+                line-height: 65px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $color_White;
+
+                span {
+                    color: $color_light_yellow;
+                }
+            }
+        }
+
+        .service_items_cards {
+            display: flex;
+            margin-bottom: 150px;
+
+            .cards {
+                position: relative;
+
+                img {
+                    width: 395px;
+                }
+
+                .search_img {
+                    position: absolute;
+                    width: 90px;
+                    top: 199px;
+                    left: 151px;
+                }
+
+                h4 {
+                    position: absolute;
+                    top: 40px;
+                    left: 40px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 33px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: $color_White;
+                }
+
+                p {
+                    position: absolute;
+                    left: -8px;
+                    bottom: 80px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 25px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: $color_White;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+
+        .service_items_box {
+            height: 550px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("/img/Service_back.png");
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .num {
+                width: 0px;
+
+                p {
+                    font-weight: 700;
+                    font-size: 72px;
+                    line-height: 98px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: $color_light_yellow;
+                }
+            }
+
+            .contant {
+                width: 395px;
+
+                p {
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 150%;
+                    color: $color_White;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$desctop) {
+    .service_container {
+        .srvice_items {
+            margin: 0 auto;
+
+            .service_items_cards {
+                position: relative;
+
+                .cards {
+                    img {
+                        width: 429px !important;
+                    }
+                    .search_img{
+                        width: 100px;
+                        display: none;
+                    }
+                }
+            }
+
+            .one {
+                display: none !important;
+            }
+
+            .two {
+                display: none !important;
+            }
+        }
+
+        .service_items_box {
+            background-image: url("/img/Service_back.png");
+            background-position: -255px;
+            display: flex;
+            justify-content: space-between;
+
+            .num {
+                p {
+                    font-size: 52px;
+                    line-height: 65px;
+                }
+
+            }
+
+            .contant {
+                p {
+                    font-weight: 700;
+                    font-size: 24px !important;
+                    line-height: 150%
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tabled) {
+    .service_container {
+        .srvice_items {
+            margin: 0 auto;
+
+            .service_items_cards {
+                .cards {
+                    .div_img {
+                        img {
+                            z-index: -2;
+                            width: 485px !important;
+                        }
+                    }
+                }
+
+                .thero {
+                    display: none;
+                }
+            }
+
+            .service_items_box {
+                background-image: url("/img/Service_back.png");
+                background-position: -255px;
+                display: flex;
+                justify-content: space-between;
+
+                .num {
+                    p {
+                        font-size: 52px;
+                        line-height: 65px;
+                    }
+
+                }
+
+                .contant {
+                    p {
+                        font-weight: 700;
+                        font-size: 24px !important;
+                        line-height: 150%
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$phone) {
+    .service_container {
+        .srvice_items {
+            margin: 0 auto;
+
+            .service_items_cards {
+                .cards {
+                    img {
+                        z-index: -1 !important;
+                        width: 485px !important;
+                    }
+
+                    .search_img {
+                        display: none !important;
+                        z-index: -2;
+                    }
+                }
+
+                .one {
+                    display: none !important;
+                }
+
+                .two {
+                    display: none !important;
+                }
+            }
+
+            .service_items_box {
+                background-image: url("/img/Service_back.png");
+                background-position: -255px;
+                display: flex;
+                justify-content: space-between;
+
+                .num {
+                    p {
+                        font-size: 52px;
+                        line-height: 65px;
+                    }
+
+                }
+
+                .contant {
+                    p {
+                        font-weight: 700;
+                        font-size: 24px !important;
+                        line-height: 150%
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

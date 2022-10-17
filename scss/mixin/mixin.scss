@@ -1,0 +1,14 @@
+
+@mixin  displayflex_Js_Sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+$color_light_yellow:#D1A954;
+$color_darkgrey:#333333;
+$color_White:#FFFF;
+
+$phone:576px;
+$tabled:768px;
+$desctop:992px;

@@ -1,0 +1,106 @@
+.sponsor {
+    background-color: $color_darkgrey;
+
+    .sponsor_items {
+        padding-bottom: 100px;
+        .sponsor_items_title {
+            padding-top: 50px;
+            padding-bottom: 100px;
+            h3 {
+                font-weight: 300;
+                font-size: 36px;
+                line-height: 65px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $color_White;
+                span{
+                    color: $color_light_yellow;
+                }
+            }
+        }
+
+        .sponsor_items_cards{
+            .cards{
+                margin-bottom: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:$desctop) {
+    .sponsor_items{
+    margin: 0 auto;
+    .sponsor_items_cards{
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            img{
+                width: 100px;
+            }
+            .odd{
+                display: none;
+                img{
+                    display: none;
+                }
+            }
+            .odd2{
+                img{
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:$tabled) {
+    .sponsor_items{
+    margin: 0 auto;
+    .sponsor_items_cards{
+        .cards{
+            img{
+                width: 160px;
+            }
+            .odd{
+                display: none;
+                img{
+                    display: none;
+                }
+            }
+            .odd2{
+                img{
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:$phone) {
+    .sponsor_items{
+        margin: 0 auto;
+        .sponsor_items_cards{
+            .cards{
+                margin-left: 42px;
+                .odd{
+                    img{
+                        display: none;
+                    }
+                }
+                .odd2{
+                    img{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+

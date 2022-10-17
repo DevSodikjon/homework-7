@@ -1,0 +1,230 @@
+.contact {
+    background-color: $color_darkgrey;
+
+    .contact_items {
+        padding-bottom: 80px;
+
+        .contact_items_title {
+            padding-top: 50px;
+            padding-bottom: 100px;
+
+            h3 {
+                font-weight: 300;
+                font-size: 42px;
+                line-height: 65px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $color_White;
+
+                span {
+                    color: $color_light_yellow;
+                }
+            }
+        }
+
+        .contact_items_content {
+            display: flex;
+            justify-content: space-between;
+
+            .tel {
+
+                p {
+                    padding: 15px 0px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: $color_White;
+                }
+            }
+
+            .contact_inputs {
+                width: 700px;
+
+                .inputs {
+                    form {
+                        display: flex;
+
+                        .name_company {
+                            input {
+                                margin-bottom: 30px;
+                                padding: 10px 20px;
+                                background-color: #444444;
+                                border: 1px solid #616161;
+                                color: $color_White;
+                            }
+                        }
+
+                        .tel_email {
+                            input {
+                                margin-bottom: 30px;
+                                padding: 10px 20px;
+                                background-color: #444444;
+                                border: 1px solid #616161;
+                                color: $color_White;
+                            }
+                        }
+
+                        .text_area {
+                            textarea {
+                                width: 220px;
+                                height: 111px;
+                                margin-bottom: 30px;
+                                padding: 10px 20px;
+                                resize: none;
+                                background-color: #444444;
+                                border: 1px solid #616161;
+                                color: $color_White;
+                            }
+                        }
+
+                    }
+
+                }
+
+                .inputs_content {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        width: 380px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: #989898;
+                    }
+
+                    button {
+                        width: 190px;
+                        height: 50px;
+                        background-color: $color_light_yellow;
+                        border: none;
+                        color: $color_White;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                        background-color: #989898;
+                        color: #444444;
+                        transition: all 1s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$desctop) {
+    .contact {
+        .contact_items {
+            .contact_items_content {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .tel {
+                    display: flex;
+                    justify-content: space-between;
+
+                   
+
+                    .tel_email {
+                        text-align: end;
+                    }
+                }
+            }
+
+            .inputs_content{
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tabled) {
+    .contact {
+        .contact_items {
+            .contact_items_content {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .tel {
+                    display: flex;
+                    justify-content: space-between;
+
+
+                    .tel_email {
+                        text-align: end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$phone) {
+    .contact {
+        .contact_items {
+            .contact_items_content {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .tel {
+                    display: flex;
+                    justify-content: space-between;
+
+
+                    .tel_email {
+                        text-align: end;
+                    }
+                }
+
+                .contact_inputs {
+                   
+                    .inputs {
+                        width: 80%;
+
+                        form {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+
+                            .name_company {
+                                display: flex;
+                                justify-content: space-around;
+                            }
+
+                            .tel_email {
+
+                                display: flex;
+                                justify-content: space-around;
+                            }
+
+                            textarea {
+                                width: 88% !important;
+                                display: flex;
+                                align-items: center;
+                                margin: 0 auto !important;
+                            }
+                        }
+                    }
+                }
+
+                .inputs_content {
+                    margin-top: 40px;
+                    margin-bottom: 50px;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    text-align: center;
+                    button{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
